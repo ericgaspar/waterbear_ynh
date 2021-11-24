@@ -1,5 +1,5 @@
 SOURCE_URL=https://github.com/ericgaspar/waterbear_ynh/releases/download/25.02.2021/waterbear.zip
-SOURCE_SUM=9b2e1868d8fcff020a453a9cdbfb3be220b9d370680bd1d76779d133dfc1682d
+SOURCE_SUM=b37c0ada18d957218c6e5ce8413c0918b207de8b9e1776341a5bc74fb12110e9
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=zip
 SOURCE_IN_SUBDIR=true
