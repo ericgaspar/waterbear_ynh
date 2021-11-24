@@ -1,7 +1,6 @@
-SOURCE_URL=javascript:display_sources();
-SOURCE_SUM=sha256 checksum
+SOURCE_URL=https://github.com/ericgaspar/waterbear_ynh/releases/download/25.02.2021/waterbear.zip
+SOURCE_SUM=6bf4224ed53eb8c3ede48b6d7bc006f83a82a4c89172a2531ccaccbec7b81ae8
 SOURCE_SUM_PRG=sha256sum
-SOURCE_FORMAT=tar.gz
+SOURCE_FORMAT=zip
 SOURCE_IN_SUBDIR=true
-SOURCE_FILENAME=
 SOURCE_EXTRACT=true
