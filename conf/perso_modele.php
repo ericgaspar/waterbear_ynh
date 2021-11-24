@@ -14,8 +14,8 @@
 
 /** ************* A MODIFIER ABSOLUMENT ***************/
 // A Décommenter et modifier si vous souhaitez intégrer le log PHP aux autres logs de Waterbear
-//ini_set ("error_log", "/home/moccam/waterbear/LOG/php_log.log"); 
-ini_set ("display_errors", "Off");
+ini_set ("error_log", "__FINALPATH__/LOG/php_log.log"); 
+ini_set ("display_errors", "on");
 
 // SQL
 // Indiquez les paramètres de votre connexion SQL
