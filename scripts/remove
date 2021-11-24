@@ -30,13 +30,13 @@ ynh_script_progression --message="Removing the MySQL database..." --time --weigh
 # Remove a database if it exists, along with the associated user
 ynh_mysql_remove_db --db_user=$db_user --db_name=$db_name
 
-#=================================================
-# REMOVE DEPENDENCIES
-#=================================================
-ynh_script_progression --message="Removing dependencies..." --time --weight=1
+# #=================================================
+# # REMOVE DEPENDENCIES
+# #=================================================
+# ynh_script_progression --message="Removing dependencies..." --time --weight=1
 
-# Remove metapackage and its dependencies
-ynh_remove_app_dependencies
+# # Remove metapackage and its dependencies
+# ynh_remove_app_dependencies
 
 #=================================================
 # REMOVE APP MAIN DIR
