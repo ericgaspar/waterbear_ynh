@@ -39,8 +39,8 @@
             {
                 "name": "path",
                 "type": "path",
-                "example": "/example",
-                "default": "/example"
+                "example": "/waterbear",
+                "default": "/waterbear"
             },
             {
                 "name": "admin",
