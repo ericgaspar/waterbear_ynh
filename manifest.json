@@ -1,6 +1,6 @@
 {
-    "name": "Example app",
-    "id": "example",
+    "name": "Waterbear",
+    "id": "waterbear",
     "packaging_format": 1,
     "description": {
         "en": "Explain in *a few (10~15) words* the purpose of the app or what it actually does (it is meant to give a rough idea to users browsing a catalog of 100+ apps)",
@@ -10,7 +10,7 @@
     "url": "https://example.com",
     "upstream": {
         "license": "free",
-        "website": "https://example.com",
+        "website": "https://http://waterbear.info/",
         "demo": "https://demo.example.com",
         "admindoc": "https://yunohost.org/packaging_apps",
         "userdoc": "https://yunohost.org/apps",

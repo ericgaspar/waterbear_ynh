@@ -1,0 +1,137 @@
+10/05/2019
+    > Ajout possibilité de recherche ou statistique par jour du mois (de 1 à 31)
+
+19/05/2019
+    > Gestion des listes : contrôle pour empêcher de créer un code vide
+
+09/06/2019
+    > Module permettant de gérer les codes de conversion vers la rec 995 sans passer par le registre
+
+16/06/2019
+    > web service permettant d'exporter les différents codes (section, type_doc, bibliotheque, emplacement) pour synchronisation vers Bokeh
+
+28/09/2019
+    > formats d'export prêts et lecteur pour import dans un autre waterbear
+
+***************************************************** 28/09/2019 : MAJ44
+
+02/02/2020
+    > lien vers le module de synchronisation des paramètres vers waterebar
+    > Sécurité pour éviter de se logier sans nom de poste
+
+***************************************************** 02/02/2020 : MAJ45
+
+06/04/2020
+    > pasasge de certaines colonnes qui étaient restées en latin (?) en utf-8
+    > augmente la taille du contenu des notices biblio (longtext) : gestion des très grandes notices avec bcp d'exemplaires
+
+***************************************************** ? : MAJ46
+
+06/04/2020
+    > Permettre de trier une liste par intitulé (plutôt que par code)
+
+08/04/2020
+    > La barre de recherche rapide fait désormais une recherche tous mots si le texte saisi n'est ni un code barre exe ou lecteur ni un EAN
+    > Simplification des recherches (plus de recherche simple)
+    > Anonymisation des prêts (6 mois après date de retour) et des lecteurs (1 ans après fin abonnement)
+      ATTENTION : il faut exporter les paniers prêts
+    > Affichage unimarc en clair
+    > Statistiques sur le nb de prêts (total des prêts, année en cours, an-1). Possibilité de paramétrer des tranches plus poussées
+      ATTENTION : il faut exporter les paniers exemplaires lors de la maj
+    > Prise en compte du critère "accessible à le rechecrhe publique" pour l'export vers Bokeh
+      ATTENTION : nécessitera impérativement une réindexation de la table biblio (sinon plus rien ne sera exporté vers Bokeh)
+    > Création d'un nouveau statut "non accessible à la recherche publique"
+    > Correction du bug #241 : quand on importe une notice avec l'option "remplacer les exemplaires existants" il modifie aussi les autres exemplaires
+    > corerction bugs #163 & #93 : impossible d'imprimer ou enregistrer une liste quand on n'est pas sur la page 1
+    > Correstion bug : quand on force le prêt d'une réservation réservée, son statut reste "en rayon" (donc à aller chercher en rayon)
+    > Possibilité de supprimer une résa via Bokeh (sauf si la résa est déjà affectée)
+    > Possibilité de prolonger un prêt via Bokeh
+
+***************************************************** ? : MAJ47
+
+28/05/2020
+    > Correctifs pour l'homogénéisation des lecteurs
+
+***************************************************** 28/05/2020 : MAJ48 et MAJ49
+
+17/06/2020
+    > Correctif bug #306 : l'import des fichiers tabulés ne fonctionne plus
+
+27/07/2020
+    > Corerctif bug : lors d'un prêt d'une revue ou d'un tome d'une série, le titre de série s'efface si on change d'onglet (le 461$t n'est pas pris en compte dans la création du champ titre dans la notice de prêt)
+
+***************************************************** 28/05/2020 : MAJ50
+
+25/09/2020
+    > amélioration de la recherche, de l'affichage et des rebonds des auteurs et des sujets
+
+04/10/2020
+    > Début de paramétrage de la grille de catalogage des prêts
+    > Amélioration de l'affichage du registre
+
+06/10/2020
+    > fin du paramétrage de la grille de catalogage des prêts
+
+10/11/2020
+    > paramétrage de la grilled e catalogage des réservations
+    > amélioration de l'affichage des réservations
+
+17/11/2020
+    > Correction bug dans fusion_marcxml.php : l'action "remplacer" plantait
+    > ajout d'une action remplacer_sauf_vide pour les fusions de notice
+
+21/11/2020
+    > Correction bug dans les WS ilsdi si présence de caractères spéciaux & < 
+
+24/11/2020
+    > Amélioration des lettres de réservation et de rappels : affichage des mails envoyés. Possibilité de simuler l'édition et d'ajouter un mail de test
+
+01/12/2020
+    > Finalisation des tests pour les réservations et les rappels
+    > amélioration des traitements par lots : ajouts de listes de choix et création de traitements simplifiés pour la section, la bib, le type doc et le statut
+
+08/12/2020
+    > Correction du bug #319 champ 001 parfois manquant posant problème lors des échanges avec Bokeh
+    > Correction d'un bug : les exemplaires peuvent être réservés mêmes s'ils sont indisponibles
+
+***************************************************** 08/12/2020 : MAJ51
+
+08/12/2020
+    > Correctif de bug : la tva et la remise sont inversées dans les bons de commande
+
+17/12/2020
+    > Formulaire de recherche d'indices Dewey (par indice ou intitulé)
+    > Possibilité de rebondir depuis un indice Dewey vers les notices associées
+    > Critère de recherche "indice dewey" en recherche biblio
+
+05/01/2021 & 12/01/2021
+    > Travail sur le paasage à PHP7
+
+21/01/2020
+    > homogénéisation des menus
+    > correction de bugs dans les stats sll
+    > ajout stat E241->E246 (prêts par fonds)
+    ATTENTION : il faudra exporter les paniers (maj des paniers statistiques)
+
+26/01/2020
+    > ajout de la personnalisation des lettres de résa dans le paramétrage simplifié
+
+11/02/2021
+    > La date de maj de l'exemplaire se met à jour en cas de traitement par lot, catalogage rapide et retour bdp
+
+16/02/2021
+    > Création d'un webService pour la géolocalisation. Implémentation dans wb pour l'autocomplétion (inscription des lecteurs)
+
+18/02/2021
+    > finalise le ws de géocodage
+    > modifie les cripts wb pour utiliser le nouveau ws
+    > Crée une nouvelle carte d'affichage des lecteurs basée sur openstreetmap
+    > traitement par lot pour géolocaliser les lecteurs
+    > création du champ 856
+
+21/02/2021
+    > Commence le travail pour gérer l'avant dernier numéro des revues (et leur reconner un statut normal)
+
+25/02/2021
+    > Fini la gestion de l'avant dernier n° des périodiques
+    > Onglet "revues" dans le paramétrage simplifié pour modifier le statut par défaut
