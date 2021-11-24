@@ -1,1 +1,0 @@
-<div id="container" style="position: absolute ; top: 10 ; left: 10 ; height: 100% ; width: 95% "></div>
