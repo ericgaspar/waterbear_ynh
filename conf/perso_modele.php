@@ -25,7 +25,7 @@ $GLOBALS["tvs_global"]["conf"]["ini"]["mysql_login_db"]="__DB_USER__"; // Nom ut
 $GLOBALS["tvs_global"]["conf"]["ini"]["mysql_mdp_db"]="__DB_PWD__"; // mdp utilisateur mysql
 
 // CHEMINS : emplacement de l'installation de votre site sur le serveur
-$GLOBALS["tvs_global"]["conf"]["ini"]["install_path"]="__FINALPATH__"; // install_path
+$GLOBALS["tvs_global"]["conf"]["ini"]["install_path"]="__FINALPATH__/"; // install_path
 
 // URL de votre site (racine)
 $GLOBALS["tvs_global"]["conf"]["ini"]["wb_url"]="http://__DOMAIN____PATH__";
