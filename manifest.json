@@ -3,8 +3,8 @@
     "id": "waterbear",
     "packaging_format": 1,
     "description": {
-        "en": "Explain in *a few (10~15) words* the purpose of the app or what it actually does (it is meant to give a rough idea to users browsing a catalog of 100+ apps)",
-        "fr": "Expliquez en *quelques* (10~15) mots l'utilité de l'app ou ce qu'elle fait (l'objectif est de donner une idée grossière pour des utilisateurs qui naviguent dans un catalogue de 100+ apps)"
+        "en": "Library management software",
+        "fr": "Logiciel de gestion de bibliothèque"
     },
     "version": "25.02.2021~ynh1",
     "url": "https://example.com",
@@ -12,7 +12,7 @@
         "license": "free",
         "website": "https://http://waterbear.info/",
         "demo": "https://demo.example.com",
-        "admindoc": "https://yunohost.org/packaging_apps",
+        "admindoc": "http://waterbear.info/doc/doc.php",
         "userdoc": "https://indexmailwaterbear.wordpress.com/",
         "code": "https://some.forge.com/example/example"
     },
