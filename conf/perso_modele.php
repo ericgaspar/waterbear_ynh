@@ -28,7 +28,7 @@ $GLOBALS["tvs_global"]["conf"]["ini"]["mysql_mdp_db"]="__DB_PWD__"; // mdp utili
 $GLOBALS["tvs_global"]["conf"]["ini"]["install_path"]="__FINALPATH__/"; // install_path
 
 // URL de votre site (racine)
-$GLOBALS["tvs_global"]["conf"]["ini"]["wb_url"]="http://__DOMAIN____PATH__";
+$GLOBALS["tvs_global"]["conf"]["ini"]["wb_url"]="http://__DOMAIN__";
 
 // utilisateurs qui ne sont pas définis dans le registre (super admin)
 // ATTENTION : changer le mot de passe du super adminsitrateur (login = superadmin)
